@@ -19,9 +19,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         equals: slug,
       },
     },
-  });
-
-  if (!data) {
+  });  if (!data) {
     res.statusCode = 404;
 
     res.setHeader("Content-Type", "application/json");
