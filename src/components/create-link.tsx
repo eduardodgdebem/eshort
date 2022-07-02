@@ -16,7 +16,7 @@ const CreateLinkForm: NextPage = () => {
   const url = window.location.origin;
 
   const slugCheck = trpc.useQuery(["slugCheck", { slug: form.slug }], {
-    refetchOnReconnect: false, // replacement for enable: false which isn't respected.
+    // refetchOnReconnect: false, // replacement for enable: false which isn't respected.
     refetchOnMount: false,
     refetchOnWindowFocus: false,
   });
